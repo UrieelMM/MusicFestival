@@ -1,0 +1,153 @@
+/* Globales */
+img{
+    max-width: 100%;
+    min-width: 100%;
+}
+p,
+h1,
+h2,
+h3{
+    margin: 0;
+}
+.bg-danger{
+    background-image: linear-gradient(120deg, #7A4FF4 0%, #35A2DD 100%) !important; 
+}
+.bg-warning{
+    background-color: #35A2DD !important;
+    box-shadow: .6rem 1rem 1rem rgba(0, 0, 0, .4);
+}
+.bg-secondary{
+    background-color: #7A4FF4 !important;
+    box-shadow: .6rem 1rem 1rem rgba(0, 0, 0, .4);
+}
+/* Navegac;ion */
+.nav-item .nav-link{
+    color: white;
+    font-size: 1.4rem;
+}
+.nav-item .nav-link:hover{
+    background-color:#35A2DD ;
+}
+
+.navbar-brand{
+    font-size: 1.8rem;
+}
+.navbar-brand span{
+    font-weight: 700;
+}
+
+.fixed-top{
+    transition: all .5s ease;
+}
+
+/* Header */
+.embed-responsive{
+    position: relative;
+    background-image: url(../img/banda.jpg);
+    height: 50rem;
+    background-position: center center;
+}
+.embed-responsive::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(120deg, rgba(123, 79, 244, 0.541) 0%, rgba(53, 162, 221, 0.473) 100%) ;
+}               
+@media (min-width:768px) {
+    .embed-responsive{
+        background-image: unset;
+        height: auto;
+    }
+}
+.informacion-concierto{
+    position: absolute; 
+   top: 35%;
+   z-index: 1;
+
+}
+.informacion-concierto h1{
+    font-size: 2rem;
+    line-height: 7rem;
+}
+.informacion-concierto h1 span,
+.informacion-concierto p{
+    font-weight: 700;
+    box-shadow: .2rem .5rem .8rem rgba(0, 0, 0, .4);
+
+}
+.informacion-concierto p{
+    font-size: 1.6rem;
+}
+.informacion-concierto .text-dark,
+.sobre-festival .text-dark{
+    color: #7A4FF4 !important;
+    font-weight: 700;
+}
+@media (min-width:768px) {
+    .informacion-concierto{
+        top: 35%;
+    }
+    .informacion-concierto h1{
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+}
+/* Lineup */
+.separador::after{
+    content:'';
+    display: block;
+    height: 128px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120px;
+    margin: 1rem auto 0;
+
+}
+.escenarioUno::after{
+    background-image: url(../img/forward-2.svg);
+}
+.escenarioDos::after{
+    background-image: url(../img/fast-forward-2.svg);
+}
+.horario.bg-warning li:nth-child(2n+1){
+    background-color: rgb(14, 148, 219) !important;
+}
+.horario.bg-secondary li:nth-child(2n+1){
+    background-color: rgb(105, 54, 247) !important;
+}
+
+/* Fecha */
+.fecha{
+    font-size: 2.6rem;
+}
+.fecha span{
+    font-weight: 700;
+}
+/* Boletos */
+.precio{
+    font-size: 2rem;
+}
+.dia-evento{
+    background-color: white;
+    width: 40%;
+    padding: .5rem 1rem;
+    color: black;
+    font-weight: 700;
+}
+/* Footer */
+.footer{
+    background-color: #35A2DD;
+    padding: 2rem 0;
+    border-top: 1rem solid #7A4FF4;
+    margin-top: 2rem;
+}
+.footer h2{
+    font-size: 1.4rem;
+}
+.footer span{
+    font-weight: 700;
+}
